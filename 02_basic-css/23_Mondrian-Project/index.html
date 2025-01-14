@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container {
+      display: grid;
+      background-color: #000;
+      gap: 9px;
+      width: 748px;
+      height: 748px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+
+    .first {
+      background-color: #E72F24;
+    }
+
+    .second {
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 5;
+    }
+
+    .third {
+      background-color: #F0F1EC;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .fourth {
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .fifth {
+      background-color: #004592;
+      grid-column-start: 4;
+      grid-row-start: 2;
+      border-bottom: 10px solid black;
+    }
+
+    .sixth {
+      background-color: #F0F1EC;
+      grid-column-start: 4;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+
+    .seventh {
+      background-color: #F0F1EC;
+    }
+
+    .eighth {
+      background-color: #F9D01E;
+    }
+
+    .ninth {
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="red-rectangle first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+    <div class="fifth"></div>
+    <div class="sixth"></div>
+    <div class="seventh"></div>
+    <div class="eighth"></div>
+    <div class="ninth"></div>
+   </div>
+</body>
+
+</html>
