@@ -13,7 +13,7 @@ $("h1").click(function() {
 });
 
 $("button").click(function() {
-    $("h1").fadeToggle();
+    $("h1").slideUp().slideDown().animate({opacity: 0.2});
 });
 
 $(document).keypress(function(event) {
